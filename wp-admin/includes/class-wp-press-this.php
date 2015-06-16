@@ -280,9 +280,9 @@ class WP_Press_This {
 			unlink( $source_tmp_file );
 
 		} else if ( is_wp_error( $source_tmp_file ) ) {
-			$source_content = new WP_Error( 'upload-error',  sprintf( __( 'Error: %s' ), sprintf( __( 'Could not download the source URL (native error: %s).' ), $source_tmp_file->get_error_message() ) ) );
+			$source_content = new WP_Error( 'upload-error',  sprintf( __( 'ERROR: %s' ), sprintf( __( 'Could not download the source URL (native error: %s).' ), $source_tmp_file->get_error_message() ) ) );
 		} else if ( ! file_exists( $source_tmp_file ) ) {
-			$source_content = new WP_Error( 'no-local-file',  sprintf( __( 'Error: %s' ), __( 'Could not save or locate the temporary download file for the source URL.' ) ) );
+			$source_content = new WP_Error( 'no-local-file',  sprintf( __( 'ERROR: %s' ), __( 'Could not save or locate the temporary download file for the source URL.' ) ) );
 		}
 
 		return $source_content;
@@ -790,7 +790,7 @@ class WP_Press_This {
 
 				?>
 				<div id="post-formats-select">
-				<fieldset><legend class="screen-reader-text"><?php _e( 'Post formats' ); ?></legend>
+				<fieldset><legend class="screen-reader-text"><?php _e( 'Post Formats' ); ?></legend>
 					<input type="radio" name="post_format" class="post-format" id="post-format-0" value="0" <?php checked( $post_format, '0' ); ?> />
 					<label for="post-format-0" class="post-format-icon post-format-standard"><?php echo get_post_format_string( 'standard' ); ?></label>
 					<?php
@@ -1148,6 +1148,10 @@ class WP_Press_This {
 	 *
 	 * @since 4.2.0
 	 * @access public
+	 *
+	 * @global WP_Locale $wp_locale
+	 * @global string    $wp_version
+	 * @global bool      $is_IE
 	 */
 	public function html() {
 		global $wp_locale, $wp_version;
@@ -1463,4 +1467,8 @@ class WP_Press_This {
 	}
 }
 
+/**
+ *
+ * @global WP_Press_This $wp_press_this
+ */
 $GLOBALS['wp_press_this'] = new WP_Press_This;
