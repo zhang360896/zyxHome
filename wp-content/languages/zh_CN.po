@@ -1908,7 +1908,7 @@ msgstr "向边栏中添加自定义菜单。"
 #: wp-includes/script-loader.php:633
 msgctxt "Open Sans font: on or off"
 msgid "on"
-msgstr "on"
+msgstr "off"
 
 #: wp-includes/general-template.php:2805
 msgctxt "admin color scheme"

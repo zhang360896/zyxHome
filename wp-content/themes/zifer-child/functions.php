@@ -481,3 +481,24 @@ function zerif_remove_sidebars(){
 	unregister_sidebar( 'sidebar-ourteam' );
 }
 add_action( 'widgets_init', 'zerif_remove_sidebars', 11 );
+
+/**
+ *Disable the google fonts
+ */
+ function coolwp_remove_open_sans_from_wp_core() {
+    wp_deregister_style( 'open-sans' );   
+    wp_register_style( 'open-sans', false );   
+    wp_enqueue_style('open-sans','');
+  }
+add_action( 'init', 'coolwp_remove_open_sans_from_wp_core' );
+
+if (!function_exists('remove_wp_open_sans')) :   
+    function remove_wp_open_sans() {   
+        wp_deregister_style( 'open-sans' );   
+        wp_register_style( 'open-sans', false );   
+    }
+    // 前台删除Google字体CSS   
+    add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
+    // 后台删除Google字体CSS   
+    add_action('admin_enqueue_scripts', 'remove_wp_open_sans'); 
+endif;
