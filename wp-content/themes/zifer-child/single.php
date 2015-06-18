@@ -54,4 +54,5 @@ endif;
 		</div>
 	</div>
 </div>
-<?php get_footer(); ?>
+
+<?php get_footer(); wp_enqueue_script('jquery');?>
