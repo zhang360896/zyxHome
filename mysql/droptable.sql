@@ -1,0 +1,14 @@
+IF EXISTS DROP TABLE `bluemix_0_5_wp_commentmeta`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_comments`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_links`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_options`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_postmeta`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_posts`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_terms`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_term_relationships`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_term_taxonomy`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_usermeta`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_users`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_wpuf_customfields`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_wpuf_subscription`;
+IF EXISTS DROP TABLE `bluemix_0_5_wp_wpuf_transaction`;
