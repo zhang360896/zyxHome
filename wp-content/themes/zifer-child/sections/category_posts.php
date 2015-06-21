@@ -6,6 +6,10 @@
 
 ?>
 
+
+<?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
+<?php wp_tag_cloud( 'smallest=8&largest=22' ); ?>
+<?php endif; ?>
 <section class="custom-category" id="custom-category">
 	<div class="container">
 		<!-- SECTION HEADER -->
@@ -39,7 +43,8 @@
 				$i=0;
 				while (have_posts()) : the_post();
 					$i++;//href='".esc_url(get_permalink())."'
-					echo "<a title='".esc_attr(get_the_title())."'  class='categ-block cat-block-".$i."'>
+					if ($i != 1)continue;
+                    echo "<a title='".esc_attr(get_the_title())."'  class='categ-block cat-block-".$i."'>
 						<div>";
 							?>
 							
@@ -64,6 +69,7 @@
                                   
                                   else: 
                                       if (esc_attr(get_the_title()) == "狗狗"):
+                                        
                                       endif;
                                   endif;
                             ?>
@@ -73,10 +79,11 @@
 					echo "</div></a> ";
 							
 				endwhile;
-
+                
 				wp_reset_query();
 				echo '</span>';
-
+                wp_cumulus_insert();//insert culmulus
+            
 				else :
 					echo '<span >';
 					echo __('Select category from "Custom Category section"','zifer-child');
