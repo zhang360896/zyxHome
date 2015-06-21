@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2015 年 06 月 20 日 16:07
+-- 生成日期: 2015 年 06 月 21 日 04:33
 -- 服务器版本: 5.0.90-community-nt
 -- PHP 版本: 5.2.14
 
@@ -25,21 +25,6 @@ SET time_zone = "+00:00";
 --
 -- 表的结构 `bluemix_0_5_wp_commentmeta`
 --
-DROP TABLE IF EXISTS `bluemix_0_5_wp_commentmeta`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_comments`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_links`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_options`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_postmeta`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_posts`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_terms`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_term_relationships`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_term_taxonomy`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_usermeta`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_users`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_customfields`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_subscription`;
-DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_transaction`;
-
 
 CREATE TABLE IF NOT EXISTS `bluemix_0_5_wp_commentmeta` (
   `meta_id` bigint(20) unsigned NOT NULL auto_increment,
@@ -132,8 +117,8 @@ CREATE TABLE IF NOT EXISTS `bluemix_0_5_wp_options` (
 --
 
 INSERT INTO `bluemix_0_5_wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(2, 'siteurl', 'http://127.0.0.1:90/wordpress', 'yes'),
-(12, 'home', 'http://127.0.0.1:90/wordpress', 'yes'),
+(2, 'siteurl', 'http://zyxhome.mybluemix.net', 'yes'),
+(12, 'home', 'http://zyxhome.mybluemix.net', 'yes'),
 (22, 'blogname', 'ZYX&#039;s Home', 'yes'),
 (32, 'blogdescription', 'Home, sweet home', 'yes'),
 (42, 'users_can_register', '0', 'yes'),

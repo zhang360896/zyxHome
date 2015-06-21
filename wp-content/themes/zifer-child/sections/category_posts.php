@@ -52,7 +52,7 @@
 							<?php
 					echo "<div class='cat-hover'><span>".esc_attr( get_the_title() )."</span>";
 							?>
-							<?php if (esc_attr(get_the_title()) == "个人简介"){ ?> 
+							<?php if (esc_attr(get_the_title()) == "个人简介"): ?> 
                                     <p><h1><font style="color:red;font-weight:bold;font-family:楷体;font-size:40px">张迎曦</font><h1></p>
                                     <p>性别男， 爱好女</p>
                                     <p>现就读于北京理工大学计算机学院, 准硕士学位</p>
@@ -61,9 +61,11 @@
                                     <p>曾在航天二院、小米科技、IBM等知名企业实习，从事云平台系统的实现</p>
                                     <p>酷爱吉他和篮球，各位走过路过不要错过！</p>
 							<?php
-                                  }
-                                  else if (esc_attr(get_the_title()) == "狗狗"){ ?>
-                            <?    }
+                                  
+                                  else: 
+                                      if (esc_attr(get_the_title()) == "狗狗"):
+                                      endif;
+                                  endif;
                             ?>
                             <?php
 					echo "</div>";
