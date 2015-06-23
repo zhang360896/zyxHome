@@ -39,7 +39,7 @@ function zifer_slug_fonts_url() {
         'family' => urlencode( implode( '|', $font_families ) ),
         'subset' => urlencode( 'latin,latin-ext' ),
     );
-    $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+    $fonts_url = add_query_arg( $query_args, '//fonts.useso.com/css' );
     return $fonts_url;
 }
 
@@ -383,7 +383,7 @@ function zifer_widgets_init()
 {
 	register_sidebar(array(
 		'name' => __('Sidebar', 'zifer-child'),
-		'id' => 'sidebar-1',
+		'id' => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h1 class="widget-title">',
@@ -482,23 +482,3 @@ function zerif_remove_sidebars(){
 }
 add_action( 'widgets_init', 'zerif_remove_sidebars', 11 );
 
-/**
- *Disable the google fonts
- */
- function coolwp_remove_open_sans_from_wp_core() {
-    wp_deregister_style( 'open-sans' );   
-    wp_register_style( 'open-sans', false );   
-    wp_enqueue_style('open-sans','');
-  }
-add_action( 'init', 'coolwp_remove_open_sans_from_wp_core' );
-
-if (!function_exists('remove_wp_open_sans')) :   
-    function remove_wp_open_sans() {   
-        wp_deregister_style( 'open-sans' );   
-        wp_register_style( 'open-sans', false );   
-    }
-    // 前台删除Google字体CSS   
-    add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
-    // 后台删除Google字体CSS   
-    add_action('admin_enqueue_scripts', 'remove_wp_open_sans'); 
-endif;

@@ -130,7 +130,7 @@ section.big-title .buttons .btn:first-child{
 }
 
 .section-content{
-	width: 1500px;
+	width: 1000px;
 	text-align:left;
 	font-weight: 300;
 	font-size: 14px;
@@ -157,7 +157,7 @@ section.about{
 }
 
 .categ-block:first-child{
-	width: 60%;
+	width: 40%;
 	padding: 40% 0 0 0;
 	margin:1.5%;
 }
