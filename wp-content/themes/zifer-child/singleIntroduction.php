@@ -2,24 +2,11 @@
 /*
 Template Name Posts: singleIntroduction
 */
+get_header();
  ?>
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<title>ONE PAGE PORTFOLIO Bootstarp Website Template| Home :: w3layouts</title>
-<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500,900' rel='stylesheet' type='text/css'>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/move-top.js"></script>
-<script type="text/javascript" src="./js/easing.js"></script>
-<script type="text/javascript">
+ <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <link href='http://fonts.useso.com/css?family=Maven+Pro:400,700,500,900' rel='stylesheet' type='text/css'>
+ <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
@@ -27,20 +14,18 @@ Template Name Posts: singleIntroduction
 				});
 			});
 		</script>
-</head>
-<body>
   <!-- header-section-starts -->
     <div class="header">
 	       <div class="header-top">
 		   <div class="container">
 		       <div class="logo">
-			      <a href=""><img src="./images/logo.png" class="img-responsive" alt="" /></a>
+			      <a href=""><img src=<?php echo get_template_directory_uri()."/images/selfIntro/logo.png";?> class="img-responsive" alt="" /></a>
 			   </div>
 			   <div class="top-menu">
 			   <span class="menu"> </span>
 			      <ul>
-				      <li><a href="#aboutus" class="scroll">About Me</a></li>
-					  <li><a href="#work" class="scroll">Work</a></li>
+				      <li><a href="#aboutus" class="scroll">关于自己</a></li>
+					  <li><a href="#work" class="scroll">工作经历</a></li>
 					  <li><a href="#clients" class="scroll">Clients</a></li>
 					  <li><a href="#contact" class="scroll">Let's talk</a></li>
 					  <div class="clearfix"></div>
@@ -66,15 +51,19 @@ Template Name Posts: singleIntroduction
 				   <article style="position: absolute; width: 100%; opacity: 0;"> 
 				   	<div class="banner-wrap">
 				   	       <div class="bannertop_box">
-				   		 		<h1>HELLO,<span>I'M YOUR NAME</span></h1>
-								<label>graphic / web / motion designer</label>
-								<p>Slider for your work.pictures yours recent projects or something like that.</p>
-				   		 	    <p>You can put your own stuff such as other text information, images etc. </p>
-							    <p>That's absolutely <span class="bold">free</span> template. Ihope you enjoy it!<span class="bold block">Thank you.</span></p>
+				   		 		<h1 style="font-size:50px;font-family:黑体,宋体">张迎曦</h1>
+                                <h2 style="color:white"></h2>
+								<label>北京理工大学/ 硕士/ 计算机科学与技术.</label>
+								<p>对计算机<span class="bold" style="font-weight:bold">算法</span>及<span class="bold">web技术</span>充满热爱.</p>
+				   		 	    <p>了解计算机网络前端和后台协议栈. </p>
+							    <p>曾在多家著名企业实习，对云平台相关领域有极高兴趣. </p><p><span class="bold block">&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;希望您能看到我的努力！</span></p>
+                                <p><span class="bold block">&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;再次感谢您的关注!</span></p>
 							</div>
 							
 				   		 	<div class="banner_right">
-				   		 		<img src="./images/slider-img2.jpg" class="img-responsive" alt="" />
+				   		 		<img src=<?php echo get_template_directory_uri()."/images/selfIntro/slider-img2.jpg"; ?> class="img-responsive" alt="" />
 				   		 	</div>
 				   		 	<div class="clearfix"></div>
 				   	  </div>
@@ -82,44 +71,28 @@ Template Name Posts: singleIntroduction
 				   <article style="position: relative; width: 100%; opacity: 1;"> 
 				   	   <div class="banner-wrap">
 				   	      <div class="bannertop_box">
-                               <h1>HAI,<span>I LOREM IPSUM</span></h1>
-								<label>design / chrome / developer</label>
-								<p>when unknown printer took galley of type Ipsum is not simply random text.</p>
-				   		 	    <p>There are many variations passages of Lorem available, images etc. </p>
-							    <p>The standard since <span class="bold">1500s</span> template. Ihope you enjoy it!<span class="bold block">Lorem Ipsum.</span></p>
+                               <h1>HELLO!</h1>
+                               <h1><span>Harry Chang</span></h1>
+								<label>BIT/ Master/ Computer Science</label>
+								<p>I am full of passion in <span class="bold">algorithm &amp; web</span>.</p>
+				   		 	    <p>I know about the front-end development and protocol stack. </p>
+							    <p>I ever practiced as an intern in many famous enterprises which inspire my interests of cloud platform.<span class="bold block">Thanks for your attention!</span></p>
 				   		 	</div>
 							
 				   		 	<div class="banner_right">
-				   		 		<img src="./images/slider-img1.jpg" class="img-responsive" alt="" />
+				   		 		<img src=<?php echo get_template_directory_uri()."/images/selfIntro/slider-img1.jpg"; ?> class="img-responsive" alt="" />
 				   		 	</div>
 				   		 	<div class="clearfix"></div>
 				   		</div>
 				   </article>
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	  <div class="banner-wrap">
-				   	       <div class="bannertop_box">
-			                  <h1>DONE,<span>THE TEMPLATE</span></h1>
-								<label>web / ./ mobile</label>
-								<p>Sed ut perspiciatis un omnis natus error voluptatem nulla pariatur.</p>
-				   		 	    <p>But I must explain to you how all mistaken idea of denouncing pleasure. </p>
-							    <p>The Lorem <span class="bold">therefore</span> template. Ihope you enjoy it!<span class="bold block">welcome</span></p>
-				   		 	</div>
-							
-				   		 	<div class="banner_right">
-				   		 		<img src="./images/slider-img.jpg" class="img-responsive" alt="" />
-				   		 	</div>
-				   		 	<div class="clearfix"></div>
-				   		 </div>
-					 </article>
 				 </div>
 				<a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
                 <ul class="wmuSliderPagination">
-                	<li><a href="#" class="">0</a></li>
+                
                 	<li><a href="#" class="">1</a></li>
                 	<li><a href="#" class="wmuActive">2</a></li>
                 </ul>
             </div>
-            <script src="./js/jquery.wmuSlider.js"></script> 
 			  <script>
        			$('.example1').wmuSlider();         
    		     </script> 	           	      
@@ -133,18 +106,22 @@ Template Name Posts: singleIntroduction
     <div class="about-section" id="aboutus">
 	    <div class="about-section-head text-center">
 		   <div class="container">
-		      <h3>ABOUT ME</h3>
-			  <p>Well, you can write something about yourself. For example, full name,  age, your geolocation and etc. And specific of your work. Maybe your work focused on UI / Web / Graphic or Motion design. I don't know :)</p>
+		      <h3>关于自己</h3>
+			  <p>张迎曦，男，24岁， 现于北京理工大学攻读计算机硕士学位，希望从事C++/openCV图像处理相关职位或者网页前端或者后台研发.</p>
+              <h3>About me</h3>
+              <p>Hi, I'm Harry Chang, male, 24 years old.
+                I am studying for my CS master degree at Beijing Institute of technology.  I wanna find a job related to the imaging processing by using C++/OpenCV. I can also be competent for the web design and networking.</p>
 		   </div>
 		</div>
 		<div class="about-section-grids">
 		    <div class="about-section-top-grid">
 			   <div class="container">
 			       <div class="col-md-3 about-section-top-left-grid">
-				      <h4>Software</h4>
+				      <h4>软件</h4>
+                      <h4>(Software)</h4>
 				   </div>
 				   <div class="col-md-9 about-section-top-right-grid">
-				      <p>Ps | Ai | Id | Ae | Mu | Cinema4d | 3dsMax + Vray</p>
+				      <p>Git | SVN | Maven | Eclipse | VS | Matlab </p>
 				   </div>
 				   <div class="clearfix"></div>
 			   </div>
@@ -152,10 +129,12 @@ Template Name Posts: singleIntroduction
 			<div class="about-section-middle-grid">
 			   <div class="container">
 			       <div class="col-md-3 about-section-middle-left-grid">
-				      <h4>Skills</h4>
+				      <h4>技能</h4>
+                      <h4>(Skills)</h4>
 				   </div>
 				   <div class="col-md-9 about-section-middle-right-grid">
-				      <p>Conceptual thinking | Web | Illustration | Identity | Team work</p>
+				      <p>Data Structure | Algorithm | C++ | OpenCV | CUDA | Java |</p>
+                      <p>MySQL | JavaScript | Html/CSS | Node.jsBackbone.js | PHP</p>
 				   </div>
 				   <div class="clearfix"></div>
 			   </div>
@@ -163,10 +142,11 @@ Template Name Posts: singleIntroduction
 			<div class="about-section-bottom-grid">
 			   <div class="container">
 			       <div class="col-md-3 about-section-bottom-left-grid">
-				      <h4>Hobby</h4>
+				      <h4>爱好</h4>
+                      <h4>(Hobby)</h4>
 				   </div>
 				   <div class="col-md-9 about-section-bottom-right-grid">
-				      <p>Music | Movies | Sport | Art | Photography</p>
+				      <p> Thinking | Cloud Platform | English | Music | Sport</p>
 				   </div>
 				   <div class="clearfix"></div>
 			   </div>
@@ -184,11 +164,11 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						 <div class="portfolio-wrapper">	
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic1.jpg" class="img-responsive" alt="" />
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic1.jpg"; ?> class="img-responsive" alt="IBM" />
 						  	
 								</a> 
 								<div class="lightbox-target" id="goofy">
-								<img src="./images/pic1.jpg" class="img-responsive" alt="" />
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/CSDN.jpg" class="img-responsive" alt="" />
 								   <a class="lightbox-close" href="#"></a>
 								</div>
 						 </div>
@@ -197,7 +177,7 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio app mix_all" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic2.jpg" class="img-responsive" alt="" />
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic2.jpg"; ?> class="img-responsive" alt="Mi" />
 						  
 								</a> 
 					    </div>
@@ -205,7 +185,7 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic3.jpg" class="img-responsive" alt="" />
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic3.jpg"; ?> class="img-responsive" alt="CASIC" />
 	
 								</a>
 
@@ -214,7 +194,7 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic4.jpg" class="img-responsive" alt="" /><div class="b-wrapper">
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic4.jpg"; ?> class="img-responsive" alt="Google" /><div class="b-wrapper">
 						  	</div>
 								</a> 
 					    </div>
@@ -223,7 +203,7 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic5.jpg" class="img-responsive" alt="" />
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic5.jpg"; ?> class="img-responsive" alt="conference" />
 	
 								</a>  
 					    </div>
@@ -232,28 +212,28 @@ Template Name Posts: singleIntroduction
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic6.jpg" class="img-responsive" alt=""/>
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic6.jpg"; ?> class="img-responsive" alt=""/>
 								</a> 
 					    </div>
 					</div>			
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic7.jpg" class="img-responsive" alt=""/>
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic7.jpg"; ?> class="img-responsive" alt=""/>
 								</a> 
 					    </div>
 					</div>	
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic8.jpg" class="img-responsive" alt=""/>
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic8.jpg"; ?> class="img-responsive" alt=""/>
 								</a> 
 					    </div>
 					</div>	
 					<div class="portfolio icon mix_all" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src="./images/pic9.jpg" class="img-responsive" alt=""/>
+								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic9.jpg"; ?> class="img-responsive" alt=""/>
 								</a> 
 					    </div>
 						</div>
@@ -278,37 +258,37 @@ Template Name Posts: singleIntroduction
 	   <div class="clients-section" id="clients">
 	      <div class="container">
 		    <div class="clients-section-head text-center">
-			   <h3>CLIENTS</h3>
+			   <h3>Acknowledgement</h3>
 			</div>
 			<div class="clients-section-grids text-center">
 			   <div class="col-md-4 client-section-grid">
-			    <img src="./images/client1.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
 			 </div>
 			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client2.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
 			 </div>
 			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client3.png" alt="" />
-			 </div>
-			 <div class="clearfix"></div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client2.png" alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client3.png" alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client1.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
 			 </div>
 			 <div class="clearfix"></div>
 			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client3.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
 			 </div>
 			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client1.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
 			 </div>
 			 <div class="col-md-4 client-section-grid">
-			    <img src="./images/client2.png" alt="" />
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
+			 </div>
+			 <div class="clearfix"></div>
+			 <div class="col-md-4 client-section-grid">
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
+			 </div>
+			 <div class="col-md-4 client-section-grid">
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
+			 </div>
+			 <div class="col-md-4 client-section-grid">
+			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
 			 </div>
 			 <div class="clearfix"></div>
 			</div>
@@ -354,49 +334,12 @@ Template Name Posts: singleIntroduction
 	</div>
 	<!-- contact-section-ends -->
   <!-- content-ends -->
-     <!-- footer-->
-	<div class="footer">
-		<div class="container">
-			<div class="copyright">
-				<p>&copy; 2014 Template by <a href="http://w3layouts.com" target="target_blank">W3layouts</a></p>
-			</div>
-		</div>
-	</div>
     <!-- footer-->
    <script type="text/javascript">
 						$(document).ready(function() {
 							$().UItoTop({ easingType: 'easeOutQuart' });
 							
 						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-                
-                
-                
-                
-        
-<style>
-</style>
-<div class="clear"></div>
-</header> <!-- / END HOME SECTION  -->
-<div id="content" class="site-content">
-<div class="container">
-<div class="content-left-wrap col-md-9">
-    <p1><font style="color:black;font-weight:bold;font-size:30px">个人信息</font></p1>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-        <div width='345px' height='345px'>
-            <img width='345px' height='345px' src="http://7xjrp9.com1.z0.glb.clouddn.com/googleCut.png"/>
-        </div>
-        <div width='345px' height='345px'>
-            <text>张迎曦，性别男，爱好女，北京理工大学计算机学院准硕士，据结构、算法设计、Web Design、CUDA图像编程，曾在航天二院、小米科技、IBM等知名企业实习，从事云平台系统的实现</text>
-            
-        </div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div>
-<div class="sidebar-wrap col-md-3 content-left-wrap">
-	<?php get_sidebar(); ?>
-</div><!-- .sidebar-wrap -->
-</div>
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <?php get_footer(); ?>

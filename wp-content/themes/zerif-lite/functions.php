@@ -1668,3 +1668,33 @@ if (!function_exists('remove_wp_open_sans')) :
     // 后台删除Google字体CSS   
     add_action('admin_enqueue_scripts', 'remove_wp_open_sans'); 
 endif;
+
+/**
+ *register the scripts
+ */
+ function wp_adding_selfIntro_scripts() {
+    wp_register_script('selfIntro_jq', get_template_directory_uri().'/js/jquery.min.js', array('jquery'),'', false);
+    wp_register_script('selfIntro_wm', get_template_directory_uri().'/js/selfIntro/jquery.wmuSlider.js', array(),'', false);
+    wp_register_script('selfIntro_mt', get_template_directory_uri().'/js/selfIntro/move-top.js', array(),'', false);
+    wp_register_script('selfIntro_es', get_template_directory_uri().'/js/selfIntro/easing.js', array(),'', false);
+    if (is_single("83")){
+        wp_enqueue_script('selfIntro_jq');
+        wp_enqueue_script('selfIntro_wm');
+        wp_enqueue_script('selfIntro_mt');
+        wp_enqueue_script('selfIntro_es');
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
+
+/**
+ *register the stylesheet
+ */
+ function wp_adding_selfIntro_stylesheets() {
+    wp_register_style('bootstrap', get_template_directory_uri().'/css/selfIntro/bootstrap.css', array(),'', 'all');
+    wp_register_style('selfStyle', get_template_directory_uri().'/css/selfIntro/style.css', array(),'', 'all');
+    if (is_single("83")){
+        wp_enqueue_style('bootstrap');
+        wp_enqueue_style('selfStyle');
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_stylesheets' );

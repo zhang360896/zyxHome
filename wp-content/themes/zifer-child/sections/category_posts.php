@@ -10,6 +10,7 @@
 <?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
 <?php wp_tag_cloud( 'smallest=8&largest=22' ); ?>
 <?php endif; ?>
+
 <section class="custom-category" id="custom-category">
 	<div class="container">
 		<!-- SECTION HEADER -->
