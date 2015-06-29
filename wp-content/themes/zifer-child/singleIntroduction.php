@@ -189,7 +189,7 @@ get_header();
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						 <div class="portfolio-wrapper">	
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic1.jpg"; ?> class="img-responsive" alt="IBM" />
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/IBM.jpg" class="img-responsive" alt="IBM" />
 						  	
 								</a> 
 								<div class="lightbox-target" id="goofy">
@@ -202,7 +202,7 @@ get_header();
 					<div class="portfolio app mix_all" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic2.jpg"; ?> class="img-responsive" alt="Mi" />
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/MI.jpg" class="img-responsive" alt="Mi" />
 						  
 								</a> 
 					    </div>
@@ -210,7 +210,7 @@ get_header();
 					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic3.jpg"; ?> class="img-responsive" alt="CASIC" />
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/casic.jpg" class="img-responsive" alt="CASIC" />
 	
 								</a>
 
@@ -219,7 +219,7 @@ get_header();
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic4.jpg"; ?> class="img-responsive" alt="Google" /><div class="b-wrapper">
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/google.jpg"class="img-responsive" alt="Google" /><div class="b-wrapper">
 						  	</div>
 								</a> 
 					    </div>
@@ -228,7 +228,7 @@ get_header();
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic5.jpg"; ?> class="img-responsive" alt="conference" />
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/SID.jpg" class="img-responsive" alt="SID" />
 	
 								</a>  
 					    </div>
@@ -237,28 +237,28 @@ get_header();
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic6.jpg"; ?> class="img-responsive" alt=""/>
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/baidu.jpg"class="img-responsive" alt="baidu"/>
 								</a> 
 					    </div>
 					</div>			
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic7.jpg"; ?> class="img-responsive" alt=""/>
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youku.jpg" class="img-responsive" alt="youku"/>
 								</a> 
 					    </div>
 					</div>	
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic8.jpg"; ?> class="img-responsive" alt=""/>
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/yili.jpg" class="img-responsive" alt="yili"/>
 								</a> 
 					    </div>
 					</div>	
 					<div class="portfolio icon mix_all" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a class="lightbox" href="#goofy">
-								   <img src=<?php echo get_template_directory_uri()."/images/selfIntro/pic9.jpg"; ?> class="img-responsive" alt=""/>
+								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/bit.jpg" class="img-responsive" alt=""/>
 								</a> 
 					    </div>
 						</div>
