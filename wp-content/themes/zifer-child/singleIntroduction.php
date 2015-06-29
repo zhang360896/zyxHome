@@ -4,8 +4,10 @@ Template Name Posts: singleIntroduction
 */
 get_header();
  ?>
+ 
  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <link href='http://fonts.useso.com/css?family=Maven+Pro:400,700,500,900' rel='stylesheet' type='text/css'>
+
  <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -14,6 +16,29 @@ get_header();
 				});
 			});
 		</script>
+<script type="text/javascript">
+						jQuery(document).ready(function($) {
+                            
+							$().UItoTop({ easingType: 'easeOutQuart' });
+                            //alert('serialize' + $("#talkingForm").serialize());
+                            $('#talkingForm').submit(function() {
+                                alert('消息发送中');
+                                $.ajax({
+                                    url:"<?echo home_url().'/service/emailSending.php'?>",
+                                    data: $("#talkingForm").serialize(),
+                                    type:'post',
+                                    dataType:'text',
+                                    success: function(data){
+                                        alert(data);
+                                    }
+                                    
+                                })
+                                return false;
+                            });
+                                
+                            
+						});
+	</script>
   <!-- header-section-starts -->
     <div class="header">
 	       <div class="header-top">
@@ -33,7 +58,7 @@ get_header();
 			   </div>
 			   <!-- script-for-menu -->
 		<script>
-			$("span.menu").click(function(){
+			jQuery("span.menu").click(function(){
 				$(".top-menu ul").slideToggle("slow" , function(){
 				});
 			});
@@ -94,7 +119,7 @@ get_header();
                 </ul>
             </div>
 			  <script>
-       			$('.example1').wmuSlider();         
+       			jQuery('.example1').wmuSlider();         
    		     </script> 	           	      
       </div>
 	  </div>
@@ -303,21 +328,21 @@ get_header();
 		   <h3>LET'S TALK</h3>
 		</div>
 		<div class="comments-area">
-		    <form>
+		    <form id="talkingForm" action=<?echo home_url()."/service/emailSending.php"?> method="POST">
 			   <p> 
-			   <label>YOUR NAME</label>
-			   <input type="text" value="" >
+			   <label>姓名(YOUR NAME)</label>
+			   <input name="sendName" type="text" value="" >
 			   </p>
 			   <p> 
-			   <label>YOUR EMAIL</label>
-			   <input type="text" value="" >
+			   <label>联系方式(YOUR CONTACT)</label>
+			   <input name="sendMail" type="text" value="" >
 			   </p>
 			   <p> 
-			   <label>YOUR MESSAGE</label>
-			   <textarea></textarea>
+			   <label>想说的话(YOUR MESSAGE)</label>
+			   <textarea name="sendMessage" ></textarea>
 			   </p>
 			   <div class="submit">
-			     <input type="submit" value="submit">
+			     <input id="btnAjaxSubmit" type="submit" value="submit">
 			   </div>
 			</form>
 		</div>
@@ -335,11 +360,7 @@ get_header();
 	<!-- contact-section-ends -->
   <!-- content-ends -->
     <!-- footer-->
-   <script type="text/javascript">
-						$(document).ready(function() {
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-	</script>
+
+   
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <?php get_footer(); ?>

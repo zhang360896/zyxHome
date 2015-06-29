@@ -5,8 +5,6 @@
  */
 
 ?>
-
-<?php wp_mail("zhang360896270@sina.com", "from home", "test from home") ?>
 <?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
 <?php wp_tag_cloud( 'smallest=8&largest=22' ); ?>
 <?php endif; ?>
