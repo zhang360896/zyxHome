@@ -4,7 +4,6 @@ Template Name Posts: singleIntroduction
 */
 get_header();
  ?>
- 
  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <link href='http://fonts.useso.com/css?family=Maven+Pro:400,700,500,900' rel='stylesheet' type='text/css'>
 
@@ -18,7 +17,7 @@ get_header();
 		</script>
 <script type="text/javascript">
 						jQuery(document).ready(function($) {
-                            
+                            $('#da-thumbs > li').hoverdir();
 							$().UItoTop({ easingType: 'easeOutQuart' });
                             //alert('serialize' + $("#talkingForm").serialize());
                             $('#talkingForm').submit(function() {
@@ -51,8 +50,8 @@ get_header();
 			      <ul>
 				      <li><a href="#aboutus" class="scroll">关于自己</a></li>
 					  <li><a href="#work" class="scroll">工作经历</a></li>
-					  <li><a href="#clients" class="scroll">Clients</a></li>
-					  <li><a href="#contact" class="scroll">Let's talk</a></li>
+					  <li><a href="#clients" class="scroll">证书和奖项</a></li>
+					  <li><a href="#contact" class="scroll">和我聊聊</a></li>
 					  <div class="clearfix"></div>
 				  </ul>
 			   </div>
@@ -159,7 +158,7 @@ get_header();
 				   </div>
 				   <div class="col-md-9 about-section-middle-right-grid">
 				      <p>Data Structure | Algorithm | C++ | OpenCV | CUDA | Java |</p>
-                      <p>MySQL | JavaScript | Html/CSS | Node.jsBackbone.js | PHP</p>
+                      <p>MySQL | JavaScript | Html/CSS | Node.js | Backbone.js | PHP</p>
 				   </div>
 				   <div class="clearfix"></div>
 			   </div>
@@ -183,7 +182,8 @@ get_header();
 	<div class="work-section" id="work">
 	    <div class="container">
 		  <div class="work-section-head text-center">
-		     <h3>WORK</h3>
+		     <h3>工作经历</h3>
+             <h3>(Intern Experience)</h3>
 		  </div>
 		  <div id="portfoliolist">
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
@@ -193,7 +193,7 @@ get_header();
 						  	
 								</a> 
 								<div class="lightbox-target" id="goofy">
-								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/CSDN.jpg" class="img-responsive" alt="" />
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/LivingRoom.jpg" class="img-responsive" alt="" />
 								   <a class="lightbox-close" href="#"></a>
 								</div>
 						 </div>
@@ -264,10 +264,7 @@ get_header();
 						</div>
 <div class="clearfix"></div>					
 				</div>
-		  <div class="clearfix"></div>
-		  <span class="more">MORE ON <a href="#">BEHANCE</a></span>
-
-		  </div>
+		  
 		  </div>
 		  <!-- script-for-portfolio -->
 		  <script type="text/javascript">
@@ -282,26 +279,52 @@ get_header();
 	<!-- clients-section-starts -->
 	   <div class="clients-section" id="clients">
 	      <div class="container">
+          
 		    <div class="clients-section-head text-center">
-			   <h3>Acknowledgement</h3>
+			   <h3>证书和奖项</h3>
+               <h3>(Achievement)</h3>
 			</div>
-			<div class="clients-section-grids text-center">
-			   <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
-			 </div>
+			<div class="clients-section-grids text-center" style="margin-left:auto;margin-right: auto;">
+                <ul id="da-thumbs" class="da-thumbs">
+                    <li>
+                        <a href="http://www.jq-school.com"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" alt="国家奖学金"/>
+                            <div >
+                                <span >2011年国家级奖学金</span>
+                            </div>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="http://www.jq-school.com"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" alt="省优秀党员" />
+                            <div >
+                                <span >省级优秀党员称号</span>
+                            </div>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="http://www.jq-school.com"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/acm.png" alt="ACM程序设计大赛"/>
+                            <div >
+                                <span >ACM/ICPC湘潭市邀请赛银牌</span>
+                            </div>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="http://www.jq-school.com"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" style="width:151px;height:151px"/>
+                            <div >
+                                <span >Menu by Simon Jensen</span>
+                            </div>
+                        </a> 
+                    </li>
+                </ul>
 			 <div class="col-md-4 client-section-grid">
 			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
 			 </div>
 			 <div class="col-md-4 client-section-grid">
 			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
 			 </div>
-			 <div class="clearfix"></div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
-			 </div>
 			 <div class="col-md-4 client-section-grid">
 			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
 			 </div>
@@ -315,7 +338,6 @@ get_header();
 			 <div class="col-md-4 client-section-grid">
 			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
 			 </div>
-			 <div class="clearfix"></div>
 			</div>
 		  </div>
 	   </div>
@@ -342,6 +364,7 @@ get_header();
 			   <textarea name="sendMessage" ></textarea>
 			   </p>
 			   <div class="submit">
+                 <img src="http://7xjrp9.com1.z0.glb.clouddn.com/We2DCode.png" style="width:120px;height:120px;;float:left" title="想进一步与我交流？请扫描二维码">
 			     <input id="btnAjaxSubmit" type="submit" value="submit">
 			   </div>
 			</form>

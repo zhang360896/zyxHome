@@ -395,7 +395,7 @@ a.lightbox-close:after {
 }
 
 .lightbox-target:target a.lightbox-close {
-	top: 0px;
+	top: 30px;
 }
 a.lightbox img:hover { 
 	background:#21A957;
@@ -426,7 +426,7 @@ span.more a:hover{
 	padding: 4em 0;
 }
 .clients-section{
-	background:#FF3D4E;
+	background:#FFBC00;
 	padding:3em 0;				 
 }
 .contact-section-head h3{
@@ -631,7 +631,7 @@ span.more a:hover{
 /*----- responsive-design ------*/	
  @media screen and (max-width:1366px){
 	.lightbox-target:target img{
-		width: 50%;
+		width: 90%;
 	}
 	.about-section-head{
 		padding: 4em 0;
