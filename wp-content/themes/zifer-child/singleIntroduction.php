@@ -339,7 +339,7 @@ get_header();
 		   <h3>LET'S TALK</h3>
 		</div>
 		<div class="comments-area">
-		    <form id="talkingForm" action=<?echo home_url()."/service/emailSending.php"?> method="POST">
+		    <form id="talkingForm" method="POST" action=<?php echo home_url().'/service/emailSending.php'?>>
 			   <p> 
 			   <label>姓名(YOUR NAME)</label>
 			   <input name="sendName" type="text" value="" >
