@@ -287,7 +287,7 @@ get_header();
 			<div class="clients-section-grids text-center" style="margin-left:auto;margin-right: auto;">
                 <ul id="da-thumbs" class="da-thumbs">
                     <li>
-                        <a href="http://www.jq-school.com"> 
+                        <a href=""> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/guojiang.png" alt="国家奖学金"/>
                             <div >
                                 <span >2011年国家级奖学金</span>
@@ -295,7 +295,7 @@ get_header();
                         </a> 
                     </li>
                     <li>
-                        <a href="http://www.jq-school.com"> 
+                        <a href=""> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" alt="省优秀党员" />
                             <div >
                                 <span >省级优秀党员称号</span>
@@ -303,7 +303,7 @@ get_header();
                         </a> 
                     </li>
                     <li>
-                        <a href="http://www.jq-school.com"> 
+                        <a href=""> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/acm.png" alt="ACM程序设计大赛"/>
                             <div >
                                 <span >多项ACM/ICPC邀请赛奖项</span>
@@ -311,7 +311,7 @@ get_header();
                         </a> 
                     </li>
                     <li>
-                        <a href="http://www.jq-school.com"> 
+                        <a href=""> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/beiligong.png"/>
                             <div >
                                 <span >多次一等奖学金</span>
@@ -319,7 +319,7 @@ get_header();
                         </a> 
                     </li>
                     <li>
-                        <a href="http://www.jq-school.com"> 
+                        <a href=""> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/beiligong.png"/>
                             <div >
                                 <span >校优秀干部、学生、团员等</span>
@@ -339,7 +339,7 @@ get_header();
 		   <h3>LET'S TALK</h3>
 		</div>
 		<div class="comments-area">
-		    <form id="talkingForm" action=<?echo home_url()."/service/emailSending.php"?> method="POST">
+		    <form id="talkingForm" method="POST" action=<?php echo home_url().'/service/emailSending.php'?>>
 			   <p> 
 			   <label>姓名(YOUR NAME)</label>
 			   <input name="sendName" type="text" value="" >
