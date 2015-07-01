@@ -338,8 +338,8 @@ get_header();
 	    <div class="contact-section-head text-center">
 		   <h3>LET'S TALK</h3>
 		</div>
-		<div class="comments-area">
-		    <form id="talkingForm" method="POST" action="<?php echo site_url('/service/emailSending.php')?>">
+		<div class="comments-area"><?php //echo site_url('/service/emailSending.php');?>
+		    <form id="talkingForm" method="POST" action="http://zyxhome.mybluemix.net/service/emailSending.php">
 			   <p> 
 			   <label>姓名(YOUR NAME)</label>
 			   <input name="sendName" type="text" value="" >
