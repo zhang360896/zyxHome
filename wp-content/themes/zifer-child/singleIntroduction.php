@@ -288,7 +288,7 @@ get_header();
                 <ul id="da-thumbs" class="da-thumbs">
                     <li>
                         <a href="http://www.jq-school.com"> 
-                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" alt="国家奖学金"/>
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/guojiang.png" alt="国家奖学金"/>
                             <div >
                                 <span >2011年国家级奖学金</span>
                             </div>
@@ -306,38 +306,27 @@ get_header();
                         <a href="http://www.jq-school.com"> 
                             <img src="http://7xjrp9.com1.z0.glb.clouddn.com/acm.png" alt="ACM程序设计大赛"/>
                             <div >
-                                <span >ACM/ICPC湘潭市邀请赛银牌</span>
+                                <span >多项ACM/ICPC邀请赛奖项</span>
                             </div>
                         </a> 
                     </li>
                     <li>
                         <a href="http://www.jq-school.com"> 
-                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youxiudangyuan.png" style="width:151px;height:151px"/>
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/beiligong.png"/>
                             <div >
-                                <span >Menu by Simon Jensen</span>
+                                <span >多次一等奖学金</span>
+                            </div>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="http://www.jq-school.com"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/beiligong.png"/>
+                            <div >
+                                <span >校优秀干部、学生、团员等</span>
                             </div>
                         </a> 
                     </li>
                 </ul>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
-			 </div>
-			 <div class="clearfix"></div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client3.png"; ?> alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client1.png"; ?> alt="" />
-			 </div>
-			 <div class="col-md-4 client-section-grid">
-			    <img src=<?php echo get_template_directory_uri()."/images/selfIntro/client2.png"; ?> alt="" />
-			 </div>
 			</div>
 		  </div>
 	   </div>
