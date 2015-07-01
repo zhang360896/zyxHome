@@ -12,4 +12,7 @@ DROP TABLE IF EXISTS `bluemix_0_5_wp_users`;
 DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_customfields`;
 DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_subscription`;
 DROP TABLE IF EXISTS `bluemix_0_5_wp_wpuf_transaction`;
-
+DROP TABLE IF EXISTS `bluemix_0_5_wp_amazingaudioplayer`;
+DROP TABLE IF EXISTS `bluemix_0_5_wp_ngg_album`;
+DROP TABLE IF EXISTS `bluemix_0_5_wp_ngg_gallery`;
+DROP TABLE IF EXISTS `bluemix_0_5_wp_ngg_pictures`;

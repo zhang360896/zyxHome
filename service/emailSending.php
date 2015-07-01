@@ -12,7 +12,7 @@
         
         //if (isset($_POST['sendName'])) {
             $arr=$_REQUEST;
-            $mailContent = 'Name:'$arr['sendName'].'  From:'.$arr['sendMail'].'  Content:'.$arr['sendMessage']; 
+            $mailContent = 'Name:'.$arr['sendName'].'  From:'.$arr['sendMail'].'  Content:'.$arr['sendMessage']; 
             $resualt = wp_mail("zhang360896270@sina.com", "zyxhomeTalking", $mailContent);
             if (resualt == true){
                 echo '消息发送成功，我将尽快回复您';

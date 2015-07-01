@@ -112,7 +112,10 @@
 					echo '<div class="'.$footer_class.' copyright">';
 					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
 						echo '<ul class="social">';
-						
+                        /* linkedin */
+						if( !empty($zerif_socials_linkedin) ):
+							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_linkedin,'zerif-lite')).'"><i class="fa fa-linkedin"></i></a></li>';
+						endif;
 						/* facebook */
 						if( !empty($zerif_socials_facebook) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_facebook,'zerif-lite')).'"><i class="fa fa-facebook"></i></a></li>';
@@ -121,10 +124,7 @@
 						if( !empty($zerif_socials_twitter) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_twitter,'zerif-lite')).'"><i class="fa fa-twitter"></i></a></li>';
 						endif;
-						/* linkedin */
-						if( !empty($zerif_socials_linkedin) ):
-							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_linkedin,'zerif-lite')).'"><i class="fa fa-linkedin"></i></a></li>';
-						endif;
+						
 						/* behance */
 						if( !empty($zerif_socials_behance) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_behance,'zerif-lite')).'"><i class="fa fa-behance"></i></a></li>';
@@ -133,6 +133,7 @@
 						if( !empty($zerif_socials_dribbble) ):
 							echo '<li><a target="_blank" href="'.esc_url(__($zerif_socials_dribbble,'zerif-lite')).'"><i class="fa fa-dribbble"></i></a></li>';
 						endif;
+                        
 						echo '</ul>';
 					endif;	
 			
@@ -141,7 +142,7 @@
 						echo esc_attr($zerif_copyright);
 					endif;
 					
-					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/" target="_blank" rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/" target="_blank" rel="nofollow"> WordPress</a></div>';
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://blog.csdn.net/zhang360896270" target="_blank" rel="nofollow"><img src="http://7xjrp9.com1.z0.glb.clouddn.com/csdnLogo.png" style="width:20px;height:20px"/>个人技术博客 </a></div>';
 					
 					echo '</div>';
 			
