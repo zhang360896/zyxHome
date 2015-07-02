@@ -1649,27 +1649,6 @@ function remove_class_function( $classes ) {
 
 }
 /**
- *Disable the google fonts
- */
- function coolwp_remove_open_sans_from_wp_core() {
-    wp_deregister_style( 'open-sans' );   
-    wp_register_style( 'open-sans', false );   
-    wp_enqueue_style('open-sans','');
-  }
-add_action( 'init', 'coolwp_remove_open_sans_from_wp_core' );
-
-if (!function_exists('remove_wp_open_sans')) :   
-    function remove_wp_open_sans() {   
-        wp_deregister_style( 'open-sans' );   
-        wp_register_style( 'open-sans', false );   
-    }
-    // 前台删除Google字体CSS   
-    add_action('wp_enqueue_scripts', 'remove_wp_open_sans');
-    // 后台删除Google字体CSS   
-    add_action('admin_enqueue_scripts', 'remove_wp_open_sans'); 
-endif;
-
-/**
  *register the scripts
  */
  function wp_adding_selfIntro_scripts() {
@@ -1692,6 +1671,8 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
  *register the stylesheet
  */
  function wp_adding_selfIntro_stylesheets() {
+    
+    
     wp_register_style('bootstrap', get_template_directory_uri().'/css/selfIntro/bootstrap.css', array(),'', 'all');
     wp_register_style('self_Style', get_template_directory_uri().'/css/selfIntro/selfstyle.css', array(),'', 'all');
     wp_register_style('hover_demo', get_template_directory_uri().'/css/selfIntro/hover_demo.css', array(),'', 'all');
@@ -1705,3 +1686,13 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_stylesheets' );
+
+ function wp_adding_button_stylesheets()
+ {
+     wp_register_style('dynamicButton_demo', get_template_directory_uri().'/css/frontPage/dynamicButton_demo.css', array(),'', 'all');
+    wp_register_style('dynamicButton_style', get_template_directory_uri().'/css/frontPage/dynamicButton_style4.css', array(),'', 'all');
+    //wp_enqueue_style('dynamicButton_demo');
+    wp_enqueue_style('dynamicButton_style');
+     
+ }
+ add_action('wp_enqueue_scripts', 'wp_adding_button_stylesheets');
