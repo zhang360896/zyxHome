@@ -1658,11 +1658,14 @@ function remove_class_function( $classes ) {
     wp_register_script('selfIntro_mt', get_template_directory_uri().'/js/selfIntro/move-top.js', array(),'', false);
     wp_register_script('selfIntro_es', get_template_directory_uri().'/js/selfIntro/easing.js', array(),'', false);
     wp_register_script('selfIntro_hoverdir', get_template_directory_uri().'/js/selfIntro/jquery.hoverdir.js', array(),'', false);
+    wp_register_script('zoom_info', get_template_directory_uri().'/js/selfIntro/zoom-info.js', array(),'', false);
+    
     if (is_single("83")){
         wp_enqueue_script('selfIntro_hoverdir');
         wp_enqueue_script('selfIntro_wm');
         wp_enqueue_script('selfIntro_mt');
         wp_enqueue_script('selfIntro_es');
+        wp_enqueue_script('zoom_info');
     }
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
@@ -1678,11 +1681,14 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
     wp_register_style('hover_demo', get_template_directory_uri().'/css/selfIntro/hover_demo.css', array(),'', 'all');
     wp_register_style('hover_style', get_template_directory_uri().'/css/selfIntro/hover_style.css', array(),'', 'all');
     wp_register_style('hover_normalize', get_template_directory_uri().'/css/selfIntro/hover_normalize.css', array(),'', 'all');
+    wp_register_style('zoom_style', get_template_directory_uri().'/css/selfIntro/zoom-style.css', array(),'', 'all');
+    
     if (is_single("83")){
         wp_enqueue_style('bootstrap');
         //wp_enqueue_style('hover_demo');
         wp_enqueue_style('hover_style');
         wp_enqueue_style('self_Style');
+        wp_enqueue_style('zoom_style');
     }
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_stylesheets' );
