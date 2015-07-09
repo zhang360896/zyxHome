@@ -189,15 +189,47 @@ get_header();
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						 <div class="portfolio-wrapper">	
                             <div class = "galleryImage">
-                                <a class="lightbox" href="#goofy">
+                                <a class="lightbox" href="#exIBM">
 								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/IBM.jpg" class="img-responsive" alt="IBM" />
                                    <div class="info">
                                         <h2>IBM研发实习</h2>
                                         <p>(2015.01~2015.08)</p>
                                    </div> 
 								</a> 
-								<div class="lightbox-target" id="goofy">
-								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/LivingRoom.jpg" class="img-responsive" alt="" />
+								<div class="lightbox-target" id="exIBM">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_IBM.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exMi">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_xiaomi.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exCASIC">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_eryuan.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exGoogle">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_google.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exSID">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_sid.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exBaidu">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_baidu.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exYouku">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_youku.png" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exYili">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/yili.jpg" class="img-responsive" alt="" />
+								   <a class="lightbox-close" href="#work"></a>
+								</div>
+                                <div class="lightbox-target" id="exBIT">
+								<img src="http://7xjrp9.com1.z0.glb.clouddn.com/ex_yanhui.png" class="img-responsive" alt="" />
 								   <a class="lightbox-close" href="#work"></a>
 								</div>
                             </div>
@@ -209,7 +241,7 @@ get_header();
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
                                 
-                                 <a class="lightbox" href="#goofy">
+                                 <a class="lightbox" href="#exMi">
                                     <img src="http://7xjrp9.com1.z0.glb.clouddn.com/MI.jpg" class="img-responsive" alt="Mi" />
                                     <div class="info">
                                         <h2>小米Java实习</h2>
@@ -224,7 +256,7 @@ get_header();
                     <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
-                                <a class="lightbox" href="#goofy">
+                                <a class="lightbox" href="#exCASIC">
 								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/casic.jpg" class="img-responsive" alt="CASIC" />
                                    <div class="info">
                                         <h2>航天二院实习</h2>
@@ -240,7 +272,7 @@ get_header();
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
-                                <a class="lightbox" style="text-align:center;" href="#goofy">
+                                <a class="lightbox" style="text-align:center;" href="#exGoogle">
                                     <img src="http://7xjrp9.com1.z0.glb.clouddn.com/google.jpg"class="img-responsive" alt="Google" />
                                     <div class="info" >
                                         <h3>Google美国总部见习</h3>
@@ -256,7 +288,7 @@ get_header();
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
-                                <a class="lightbox" href="#goofy">
+                                <a class="lightbox" href="#exSID">
                                        <img src="http://7xjrp9.com1.z0.glb.clouddn.com/SID.jpg" class="img-responsive" alt="SID" />
                                        <div class="info">
                                             <h3>美国SID国际会议</h3>
@@ -270,7 +302,7 @@ get_header();
                     <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
                             <div class="portfolio-wrapper">		
                                 <div class = "galleryImage">
-                                    <a class="lightbox" href="#goofy">
+                                    <a class="lightbox" href="#exBaidu">
                                         <img src="http://7xjrp9.com1.z0.glb.clouddn.com/baidu.jpg"class="img-responsive" alt="baidu"/>
                                            <div class="info">
                                                 <h3 >百度总部参观学习</h3>
@@ -285,7 +317,7 @@ get_header();
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
-                                <a class="lightbox" href="#goofy">
+                                <a class="lightbox" href="#exYouku">
 								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/youku.jpg" class="img-responsive" alt="youku"/>
                                    <div class="info">
                                         <h3>优酷土豆参观学习</h3>
@@ -297,19 +329,21 @@ get_header();
 					</div>	
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
-							<a class="lightbox" href="#goofy">
+                            <div class = "galleryImage">
+							<a class="lightbox" href="#exYili">
 								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/yili.jpg" class="img-responsive" alt="yili"/>
                                    <div class="info">
-                                        <h2>伊利公司参观学习</h2>
+                                        <h3>伊利公司参观学习</h3>
                                         <p>(2014.9~2014.9)</p>
                                     </div>   
 								</a> 
+                                </div>
 					    </div>
 					</div>	
 					<div class="portfolio icon mix_all" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
                             <div class = "galleryImage">
-                                <a class="lightbox" href="#goofy">
+                                <a class="lightbox" href="#exBIT">
 								   <img src="http://7xjrp9.com1.z0.glb.clouddn.com/bit.jpg" class="img-responsive" alt=""/>
                                    <div class="info">
                                         <h3>校、院研会工作</h3>
@@ -406,6 +440,22 @@ get_header();
                             </div>
                         </a> 
                     </li>
+                    <!--<li>
+                        <a href="#clients"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/1.png"/>
+                            <div >
+                                <span >计算机与软件专业技术资格网络工程师证书(中级)</span>
+                            </div>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#clients"> 
+                            <img src="http://7xjrp9.com1.z0.glb.clouddn.com/xinxijishu.png"/>
+                            <div >
+                                <span >全国信息技术网络信息安全工程师技术证书(中级)</span>
+                            </div>
+                        </a> 
+                    </li>-->
                 </ul>
 			</div>
 		  </div>

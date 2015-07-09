@@ -6,7 +6,7 @@ $(document).ready(function()
 		function()
 		{
 		
-		$(this).find('img').animate({width:"30%",height:"100%", marginLeft:"35%"}, 500, 
+		$(this).find('img').animate({width:"30%",height:"10%", marginLeft:"35%"}, 500, 
                                 function()
                                 { 
                                     $(this).parent().find("div").show();
@@ -16,7 +16,7 @@ $(document).ready(function()
 		 function()
 		 {
 			 
-			 $(this).find('img').animate({width:"100%", marginBottom:0, marginTop:0, marginLeft:0},300,
+			 $(this).find('img').animate({width:"100%",height:"25%", marginBottom:0, marginTop:0, marginLeft:0},300,
                                         function()
                                         { 
                                             $(this).parent().find("div").hide();
