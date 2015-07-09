@@ -79,7 +79,7 @@ endif; ?>
 
 
 <header id="home" class="header">
-<?php echo do_shortcode('[amazingaudioplayer id="5"]'); ?>
+<?php echo do_shortcode('[amazingaudioplayer id="13"]'); ?>
 	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
 
 		<div class="container">
