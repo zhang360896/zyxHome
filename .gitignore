@@ -1,1 +1,7 @@
 /vendor/
+<<<<<<< HEAD
+=======
+.htaccess
+composer.lock
+composer.phar
+>>>>>>> 161be271189f6c179308ad121c3f21497a7393ec
