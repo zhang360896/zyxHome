@@ -1,1 +1,7 @@
 /vendor/
+<<<<<<< HEAD
+=======
+.htaccess
+composer.lock
+composer.phar
+>>>>>>> zyxlab
