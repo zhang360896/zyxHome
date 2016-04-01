@@ -14,12 +14,9 @@ get_header(); ?>
 
 
 
-	<div id="content" class="site-content" style="background:url('http://7xjrp9.com1.z0.glb.clouddn.com/LivingRoom.jpg')">
+	<div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
 
 <div class="container">
-
-
-
 <div class="content-left-wrap col-md-9">
 
 	<div id="primary" class="content-area">
