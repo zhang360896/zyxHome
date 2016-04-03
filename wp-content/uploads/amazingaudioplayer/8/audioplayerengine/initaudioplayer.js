@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
-    var jsFolder = "http://127.0.0.1:90/wordpress/wp-content/uploads/amazingaudioplayer/4/audioplayerengine/";
-    jQuery("#amazingaudioplayer-4").amazingaudioplayer({
+    var jsFolder = "http://127.0.0.1/homepage/wp-content/uploads/amazingaudioplayer/8/audioplayerengine/";
+    jQuery("#amazingaudioplayer-8").amazingaudioplayer({
         jsfolder:jsFolder,
         titleinbarwidthmode:"fixed",
         timeformatlive:"%CURRENT% / LIVE",
@@ -37,11 +37,13 @@ jQuery(document).ready(function(){
         tracklistitemformat:"%ID%. %TITLE% <span style='position:absolute;top:0;right:0;'>%DURATION%</span>",
         prevnextimagewidth:24,
         tracklistarrowimage:"tracklistarrow-48-16-0.png",
+        forceflash:false,
         playpauseimageheight:24,
         showbackgroundimage:false,
         imagewidth:100,
         stopimage:"stop-24-24-0.png",
         playpauseimage:"playpause-24-24-0.png",
+        forcehtml5:false,
         showprevnext:true,
         backgroundimage:"",
         autoplay:true,
@@ -50,7 +52,7 @@ jQuery(document).ready(function(){
         showtracklistbackgroundimage:false,
         titleinbarscroll:true,
         showtitle:false,
-        defaultvolume:-1,
+        defaultvolume:100,
         tracklistarrowimageheight:16,
         heightmode:"auto",
         titleinbarformat:"%TITLE%",
