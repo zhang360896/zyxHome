@@ -29,9 +29,14 @@ function zifer_enqueue_scripts(){
 	// scripts.js file to your child theme
 	// to add custom javascript to your child theme
 	wp_enqueue_script( 'zifer-scripts', get_stylesheet_directory_uri() . '/js/child-scripts.js', array('zerif_script'), '20140101', true );
-    
+
+	wp_enqueue_script( 'particleClock',get_stylesheet_directory_uri() . '/js/particleClock.js' );
+	
 	wp_enqueue_style('zifer_font', zifer_slug_fonts_url(), array(), null );
+	wp_enqueue_style('particleClockCss', get_stylesheet_directory_uri() . '/css/particleClock.css');
+	
 	wp_dequeue_style('zerif_font');
+	
 }
 function zifer_slug_fonts_url() {
     $fonts_url = '';
