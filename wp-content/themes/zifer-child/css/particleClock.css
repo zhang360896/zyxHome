@@ -1,0 +1,22 @@
+#cas {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 120px;
+	z-index: 2;
+	display: block;
+	margin: auto;
+	background-color: #FFFF;
+	
+}
+
+#bgcas {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+	display: block;
+	margin: auto;
+	background-color: #FFFF;
+	opacity: 0;
+}
