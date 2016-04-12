@@ -345,6 +345,8 @@ function zerif_scripts()
     wp_enqueue_script('zerif_script', get_template_directory_uri() . '/js/zerif.js', array("jquery", "zerif_knob_nav"), '20120206', true);
 
 	wp_enqueue_script('snooker_script', get_template_directory_uri() . '/js/soonker.js');
+	
+	wp_enqueue_script('snookerReset_script', get_template_directory_uri() . '/js/livingRoom_snookerReset.js');
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
 

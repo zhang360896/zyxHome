@@ -20,7 +20,7 @@ get_header(); ?>
 		</div>
 		<div style="position:absolute;right:30%;top:550px;color:#000";>进球数：<span id="livingRoom_snooker_shotNum">0</span></div>
 	</div>
-
+<input type="button"  id="livingRoom_snookerReset" value="_snookerReset" >
 
 	<div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
 
