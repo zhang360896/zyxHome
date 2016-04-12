@@ -3,16 +3,16 @@ jQuery(document).ready(function ($) {
 	if (testDocument == null || typeof(testDocument) == 'undefine' || testDocument == 0) return ;
     var canvas = document.getElementById("livingRoom_snooker_cas");
     var ctx = canvas.getContext('2d');
-    var mcl = 1, collarg = 0.8, ballRadius = 9, t0 = 0, balls = [], tbw = 14, animateStop = true, powAnimation = false;
+    var mcl = 1, collarg = 0.8, ballRadius = 10, t0 = 0, balls = [], tbw = 14, animateStop = true, powAnimation = false;
     var dotline;
     pxpm = canvas.height / 20;
 
     window.onload = function () {
-        var myball = new Ball(120, canvas.height / 4, true);
+        var myball = new Ball(175, canvas.height / 4, true);
         balls.push(myball);
         for (var i = 0; i < 6; i++) {
             for (var j = 0; j < i; j++) {
-                var other = new Ball((canvas.width - i * 2 * ballRadius) / 2 + ballRadius + 2 * ballRadius * j, 220 + i * (ballRadius - 2) * 2, false);
+                var other = new Ball((canvas.width - i * 2 * ballRadius) / 2 + ballRadius + 2 * ballRadius * j, 340 + i * (ballRadius - 2) * 2, false);
                 balls.push(other);
             }
         }
@@ -260,12 +260,12 @@ jQuery(document).ready(function ($) {
             this.x += t * this.vx * pxpm;
             this.y += t * this.vy * pxpm;
 
-            if ((this.x < 25 && this.y < 25) || (this.y > 158 && this.y < 184 && this.x < 22) || (this.x > 215 && this.y < 25) || (this.x < 25 && this.y > 327) || (this.y > 158 && this.y < 184 && this.x > 218) || (this.x > 215 && this.y > 327)) {
+            if ((this.x < 27 && this.y < 27) || (this.y > 257 && this.y < 293 && this.x < 24) || (this.x > 323 && this.y < 27) || (this.x < 27 && this.y > 523) || (this.y > 257 && this.y < 293 && this.x > 318) || (this.x > 323 && this.y > 523)) {
                 this.inhole = true;
                 if (this.ismine) {
                     var that = this;
                     setTimeout(function () {
-                        that.x = 120;
+                        that.x = 175;
                         that.y = canvas.height / 4;
                         that.vx = 0;
                         that.vy = 0;
