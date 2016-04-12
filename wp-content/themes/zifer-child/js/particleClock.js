@@ -12,15 +12,16 @@ jQuery(document).ready(function($){
         "1111/1001/1001/1111/0001/0001/1111", //9
         "0000/0000/0010/0000/0010/0000/0000" //:
     ]
+	var testDocument = document.getElementById("index_clock_cas");
+	if (testDocument == null || typeof(testDocument) == 'undefine' || testDocument == 0) return ;
+    var clockCanvas = document.getElementById("index_clock_cas"),
+            clockBgCanvas = document.getElementById("index_clock_bgcas"),
+            ctx = clockCanvas.getContext('2d'),
+            bgctx = clockBgCanvas.getContext("2d");
 
-    var canvas = document.getElementById("cas"),
-            bgcanvas = document.getElementById("bgcas"),
-            ctx = canvas.getContext('2d'),
-            bgctx = bgcanvas.getContext("2d");
-
-    bgcanvas.width = canvas.width;
-    bgcanvas.height = canvas.height;
-	//alert(canvas.width+' '+canvas.height);
+    clockBgCanvas.width = clockCanvas.width;
+    clockBgCanvas.height = clockCanvas.height;
+	//alert(clockCanvas.width+' '+clockCanvas.height);
     var P_radius = 3, Gravity = 9.8;
     var Particle = function () {
         this.x = 0;
@@ -66,14 +67,14 @@ jQuery(document).ready(function($){
 
                 var vy = this.vy + Gravity * time;
 
-                if (this.y >= canvas.height - P_radius) {
-                    this.y = canvas.height - P_radius
+                if (this.y >= clockCanvas.height - P_radius) {
+                    this.y = clockCanvas.height - P_radius
                     vy = -vy * 0.8;
                 }
 
                 this.vy = vy;
 
-                if (this.x < -P_radius || this.x > canvas.width + P_radius || this.y > canvas.height + P_radius) {
+                if (this.x < -P_radius || this.x > clockCanvas.width + P_radius || this.y > clockCanvas.height + P_radius) {
                     this.visible = false;
                 }
             }
@@ -107,7 +108,7 @@ jQuery(document).ready(function($){
     }
 
     function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, clockCanvas.width, clockCanvas.height);
 
         var timeCount_2 = new Date();
 
@@ -133,9 +134,9 @@ jQuery(document).ready(function($){
     var xjg = 5;       //各个字母之间的距离
     var yjg = 5;       //每一栏上下距离
     function drawBg() {
-        var tx = (canvas.width - ((P_radius * 2 + X_J) * 4 * 8 + 7 * xjg)) / 2;
+        var tx = (clockCanvas.width - ((P_radius * 2 + X_J) * 4 * 8 + 7 * xjg)) / 2;
         for (var i = 0; i < 8; i++) {
-            var ty = (canvas.height - ((P_radius + yjg) * 6)) / 2;
+            var ty = (clockCanvas.height - ((P_radius + yjg) * 6)) / 2;
             for (var j = 0; j < numData[0].length; j++) {
                 var tt = numData[0].charAt(j);
                 if (tt === "/") {
@@ -178,8 +179,8 @@ jQuery(document).ready(function($){
         }
         lastDate = nowdate;
 
-        var tx = (canvas.width - ((P_radius * 2 + X_J) * 4 * 8 + 7 * xjg)) / 2; //计算时间的x轴值
-        var ty = (canvas.height - ((P_radius + yjg) * 6)) / 2;  //计算时间的y轴值
+        var tx = (clockCanvas.width - ((P_radius * 2 + X_J) * 4 * 8 + 7 * xjg)) / 2; //计算时间的x轴值
+        var ty = (clockCanvas.height - ((P_radius + yjg) * 6)) / 2;  //计算时间的y轴值
 //        遍历时间字符
         for (; i < nowdate.length; i++) {
             var charX = tx + i*(xjg + 4 * (P_radius * 2 + X_J));   //计算该字符的X轴值

@@ -1,4 +1,4 @@
-#cas {
+#index_clock_cas {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -10,7 +10,7 @@
 	
 }
 
-#bgcas {
+#index_clock_bgcas {
 	position: absolute;
 	left: 0;
 	right: 0;

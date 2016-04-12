@@ -311,6 +311,8 @@ function zerif_scripts()
     wp_enqueue_style('zerif_style', get_stylesheet_uri(), array('zerif_pixeden_style'), 'v1');
 
     wp_enqueue_style('zerif_responsive_style', get_template_directory_uri() . '/css/responsive.css', array('zerif_style'), 'v1');
+	
+	wp_enqueue_style('snooker_style', get_template_directory_uri() . '/css/snooker.css');
 
     if ( wp_is_mobile() ){
         
@@ -341,6 +343,8 @@ function zerif_scripts()
     /* zerif script */
 
     wp_enqueue_script('zerif_script', get_template_directory_uri() . '/js/zerif.js', array("jquery", "zerif_knob_nav"), '20120206', true);
+
+	wp_enqueue_script('snooker_script', get_template_directory_uri() . '/js/soonker.js');
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
 

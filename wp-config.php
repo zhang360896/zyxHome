@@ -22,7 +22,7 @@ define('DB_NAME', 'zyxhome');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'sqlyzk16');
+define('DB_PASSWORD', '987654');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

@@ -11,16 +11,14 @@ get_header(); ?>
 <div class="clear"></div>
 
 </header> <!-- / END HOME SECTION  -->
-<div class="view">
-		<canvas id="cas" width="240" height="352""style="display:none;" >您的浏览器不支持canvas，请升级浏览器</canvas> 
-		<img src="http://7xjrp9.com1.z0.glb.clouddn.com/white_ball.png" id="wb" alt=""style="display:none;" />
-		<img src="http://7xjrp9.com1.z0.glb.clouddn.com/yellow_ball.png" id="yb" alt="" style="display:none;"/>
-		<div class="shotPower">
-			<div id="maxPower">MAX</div>
-			<div id="powbar"><div id="pow"></div></div>
-			<div id="powText">power</div>
+<div class="livingRoom_snooker_view">
+		<canvas id="livingRoom_snooker_cas" width="350" height="550""style="display:none;" >您的浏览器不支持canvas，请升级浏览器</canvas> 
+		<img src="http://7xjrp9.com1.z0.glb.clouddn.com/white_ball.png" id="livingRoom_snooker_wb" alt=""style="display:none;" />
+		<img src="http://7xjrp9.com1.z0.glb.clouddn.com/yellow_ball.png" id="livingRoom_snooker_yb" alt="" style="display:none;"/>
+		<div class="livingRoom_snooker_shotPower">
+			<div id="livingRoom_snooker_powbar"><div id="livingRoom_snooker_pow"></div></div>
 		</div>
-		<div style="position:absolute;left:-100px;top:250px;color:#FFF">进球数：<span id="shotNum">0</span></div>
+		<div style="position:absolute;right:30%;top:550px;color:#000";>进球数：<span id="livingRoom_snooker_shotNum">0</span></div>
 	</div>
 
 

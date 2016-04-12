@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
-    var canvas = document.getElementById("cas");
+	var testDocument = document.getElementById("livingRoom_snooker_cas");
+	if (testDocument == null || typeof(testDocument) == 'undefine' || testDocument == 0) return ;
+    var canvas = document.getElementById("livingRoom_snooker_cas");
     var ctx = canvas.getContext('2d');
     var mcl = 1, collarg = 0.8, ballRadius = 9, t0 = 0, balls = [], tbw = 14, animateStop = true, powAnimation = false;
     var dotline;
@@ -18,7 +20,7 @@ jQuery(document).ready(function ($) {
         dotline = new dotLine(0, 0, 0, 0);
 
         animateStop = false;
-        animate();
+        livingRoom_snooker_animate();
     }
 
     canvas.addEventListener("touchstart", function () {
@@ -27,14 +29,14 @@ jQuery(document).ready(function ($) {
             if (this.moving && !this.inhole) stop = true;;
         });
         if (stop) return;
-        document.querySelector(".shotPower").style.display = "block";
-        document.querySelector(".shotPower").style.top = balls[0].y - 60 + "px";
-        document.querySelector(".shotPower").style.left = balls[0].x - 40 + "px";
-        document.getElementById("pow").className = "animate";
+        document.querySelector(".livingRoom_snooker_shotPower").style.display = "block";
+        document.querySelector(".livingRoom_snooker_shotPower").style.top = balls[0].y - 60 + "px";
+        document.querySelector(".livingRoom_snooker_shotPower").style.left = balls[0].x - 40 + "px";
+        document.getElementById("livingRoom_snooker_pow").className = "livingRoom_snooker_animate";
 
         var touch = event.targetTouches[0];
-        var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-        var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+        var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+        var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
         dotline.display = true;
         dotline.x0 = balls[0].x;
         dotline.y0 = balls[0].y;
@@ -47,28 +49,28 @@ jQuery(document).ready(function ($) {
         function mmHandle() {
             event.preventDefault();
             var touch = event.targetTouches[0];
-            var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-            var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+            var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+            var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
             dotline.x1 = x;
             dotline.y1 = y;
         }
         function muHandle() {
-            var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-            var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+            var x = touch.pageX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+            var y = touch.pageY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
             var angle = Math.atan((y - balls[0].y) / (x - balls[0].x));
-            var h = document.getElementById("pow").offsetHeight / document.getElementById("powbar").offsetHeight;
+            var h = document.getElementById("livingRoom_snooker_pow").offsetHeight / document.getElementById("livingRoom_snooker_powbar").offsetHeight;
             var v = 60 * h;
-            document.getElementById("pow").style.height = h * 100 + "%"
+            document.getElementById("livingRoom_snooker_pow").style.height = h * 100 + "%"
 
             balls[0].vx = x - balls[0].x > 0 ? v * Math.abs(Math.cos(angle)) : -v * Math.abs(Math.cos(angle));
             balls[0].vy = y - balls[0].y > 0 ? v * Math.abs(Math.sin(angle)) : -v * Math.abs(Math.sin(angle));
 
-            document.getElementById("pow").className = "";
+            document.getElementById("livingRoom_snooker_pow").className = "";
 
             window.removeEventListener("touchend", muHandle, false);
             window.removeEventListener("touchmove", muHandle, false);
             dotline.display = false;
-            document.querySelector(".shotPower").style.display = "none";
+            document.querySelector(".livingRoom_snooker_shotPower").style.display = "none";
         }
     }, false);
 
@@ -78,12 +80,12 @@ jQuery(document).ready(function ($) {
             if (this.moving && !this.inhole) stop = true;;
         });
         if (stop) return;
-        document.querySelector(".shotPower").style.display = "block";
-        document.querySelector(".shotPower").style.top = balls[0].y - 60 + "px";
-        document.querySelector(".shotPower").style.left = balls[0].x - 40 + "px";
-        document.getElementById("pow").className = "animate";
-        var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-        var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+        document.querySelector(".livingRoom_snooker_shotPower").style.display = "block";
+        document.querySelector(".livingRoom_snooker_shotPower").style.top = balls[0].y - 60 + "px";
+        document.querySelector(".livingRoom_snooker_shotPower").style.left = balls[0].x - 40 + "px";
+        document.getElementById("livingRoom_snooker_pow").className = "livingRoom_snooker_animate";
+        var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+        var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
         dotline.display = true;
         dotline.x0 = balls[0].x;
         dotline.y0 = balls[0].y;
@@ -94,33 +96,33 @@ jQuery(document).ready(function ($) {
         window.addEventListener("mousemove", mmHandle, false);
 
         function mmHandle() {
-            var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+            var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
             dotline.x1 = x;
             dotline.y1 = y;
         }
         function muHandle() {
-            var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".view").offsetLeft;
-            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".view").offsetTop;
+            var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
+            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
 
             var angle = Math.atan((y - balls[0].y) / (x - balls[0].x));
-            var h = document.getElementById("pow").offsetHeight / document.getElementById("powbar").offsetHeight;
+            var h = document.getElementById("livingRoom_snooker_pow").offsetHeight / document.getElementById("livingRoom_snooker_powbar").offsetHeight;
             var v = 60 * h;
-            document.getElementById("pow").style.height = h * 100 + "%"
+            document.getElementById("livingRoom_snooker_pow").style.height = h * 100 + "%"
 
             balls[0].vx = x - balls[0].x > 0 ? v * Math.abs(Math.cos(angle)) : -v * Math.abs(Math.cos(angle));
             balls[0].vy = y - balls[0].y > 0 ? v * Math.abs(Math.sin(angle)) : -v * Math.abs(Math.sin(angle));
 
-            document.getElementById("pow").className = "";
+            document.getElementById("livingRoom_snooker_pow").className = "";
 
             window.removeEventListener("mouseup", muHandle, false);
             window.removeEventListener("mousemove", muHandle, false);
             dotline.display = false;
-            document.querySelector(".shotPower").style.display = "none";
+            document.querySelector(".livingRoom_snooker_shotPower").style.display = "none";
         }
     }, false);
 
-    function animate() {
+    function livingRoom_snooker_animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         var t1 = new Date();
         var t = (t1 - t0) / 1000;
@@ -138,19 +140,19 @@ jQuery(document).ready(function ($) {
         t0 = t1;
         if (!animateStop) {
             if ("requestAnimationFrame" in window) {
-                requestAnimationFrame(animate);
+                requestAnimationFrame(livingRoom_snooker_animate);
             }
             else if ("webkitRequestAnimationFrame" in window) {
-                webkitRequestAnimationFrame(animate);
+                webkitRequestAnimationFrame(livingRoom_snooker_animate);
             }
             else if ("msRequestAnimationFrame" in window) {
-                msRequestAnimationFrame(animate);
+                msRequestAnimationFrame(livingRoom_snooker_animate);
             }
             else if ("mozRequestAnimationFrame" in window) {
-                mozRequestAnimationFrame(animate);
+                mozRequestAnimationFrame(livingRoom_snooker_animate);
             }
             else {
-                setTimeout(animate, 16);
+                setTimeout(livingRoom_snooker_animate, 16);
             }
         }
     }
@@ -236,7 +238,7 @@ jQuery(document).ready(function ($) {
     Ball.prototype = {
         constructor: Ball,
         _paint: function () {
-            var b = this.ismine ? document.getElementById("wb") : document.getElementById("yb")
+            var b = this.ismine ? document.getElementById("livingRoom_snooker_wb") : document.getElementById("livingRoom_snooker_yb")
             if (b.complete) {
                 ctx.drawImage(b, this.x - this.radius, this.y - this.radius, 2 * this.radius, 2 * this.radius);
             }
@@ -271,7 +273,7 @@ jQuery(document).ready(function ($) {
                     }, 500)
                 }
                 else {
-                    document.getElementById("shotNum").innerHTML = parseInt(document.getElementById("shotNum").innerHTML) + 1;
+                    document.getElementById("livingRoom_snooker_shotNum").innerHTML = parseInt(document.getElementById("livingRoom_snooker_shotNum").innerHTML) + 1;
                     //if(!(3-parseInt(document.getElementById("shotNum").innerHTML))){
 
                     //window.onload();
