@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-	function livingroom_snooker(){
+	
 	var testDocument = document.getElementById("livingRoom_snooker_cas");
 	if (testDocument == null || typeof(testDocument) == 'undefine' || testDocument == 0) return ;
     var canvas = document.getElementById("livingRoom_snooker_cas");
@@ -376,6 +376,5 @@ jQuery(document).ready(function ($) {
         }
         return false;
     }
-	}
-	livingroom_snooker();
+	
 });
