@@ -18,9 +18,10 @@ get_header(); ?>
 		<div class="livingRoom_snooker_shotPower">
 			<div id="livingRoom_snooker_powbar"><div id="livingRoom_snooker_pow"></div></div>
 		</div>
-		<div style="position:absolute;right:30%;top:550px;color:#000";>进球数：<span id="livingRoom_snooker_shotNum">0</span></div>
+		<div class="livingRoom_snooker_num" style="position:absolute;right:30%;top:550px;color:red";>进球数：<span id="livingRoom_snooker_shotNum">0</span></div>
+		<input type="button"  id="livingRoom_snookerReset" value="Restart"/>
 	</div>
-<input type="button"  id="livingRoom_snookerReset" value="_snookerReset" onclick="a()" >
+    
 
 	<div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
 

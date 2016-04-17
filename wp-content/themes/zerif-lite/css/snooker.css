@@ -5,6 +5,8 @@
 		#livingRoom_snooker_pow{width: 100%;height:50%;position: absolute;bottom: 0px;}
 		#livingRoom_snooker_maxPower{color: #FFF;text-align: center;width: 100%;padding-bottom:3px;font-size: 10px;}
 		#livingRoom_snooker_powText{color: #FFF;text-align: center;width: 100%;padding-top: 3px;font-size: 8px;}
+		#livingRoom_snookerReset{position:absolute;right:50%;top:545px;color:#000;background-color:yellow;border:1px solid red;padding:3px 5px;}
+		#livingRoom_snookerReset:hover{color:red;background-color:green;}
 		.livingRoom_snooker_animate{-webkit-animation:add 2s infinite linear;}
 		@-webkit-keyframes add{
 			0%{height:0%;background-color:#ff0;}

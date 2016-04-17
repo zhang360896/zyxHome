@@ -19,7 +19,6 @@ jQuery(document).ready(function ($) {
         }
         t0 = new Date();
         dotline = new dotLine(0, 0, 0, 0);
-
         animateStop = false;
         livingRoom_snooker_animate();
     }
@@ -377,4 +376,34 @@ jQuery(document).ready(function ($) {
         return false;
     }
 	
+	
+	//$('#livingRoom_snookerReset').hover(function (){ 
+	//			$('.livingRoom_snooker_num').hide(); 
+	//			},function(){ 
+	//			$('.livingRoom_snooker_num').show(); 
+	//			} 
+	//			) 
+
+	var snooker_reset= $('#livingRoom_snookerReset');
+	snooker_reset.click(function () {
+		var num=$('#livingRoom_snooker_shotNum');
+		num.text(0);
+		var k=0;
+		balls[k].x= 175;
+		balls[k].y=canvas.height / 4;
+		balls[k].vx = 0;
+		balls[k].vy = 0;
+        balls[k++].inhole = false;
+		 for (var i = 0; i < 6; i++) {
+            for (var j = 0; j < i; j++) {
+                balls[k].x = (canvas.width - i * 2 * ballRadius) / 2 + ballRadius + 2 * ballRadius * j;
+				balls[k].y= 340 + i * (ballRadius - 2) * 2;
+				balls[k].vx = 0;
+		        balls[k].vy = 0;
+                balls[k++].inhole=false;
+               
+            }
+        }
+  
+});
 });
