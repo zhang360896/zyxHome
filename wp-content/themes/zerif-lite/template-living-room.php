@@ -24,7 +24,10 @@ get_header(); ?>
     
 
 <div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
+<video controls="controls">
 
+ <source type="video/mp4" src="http://7xjrp9.com1.z0.glb.clouddn.com/living-room-video.mp4" />
+</video>
 
 <div class="container">
 <div class="content-left-wrap col-md-9">
