@@ -23,7 +23,8 @@ get_header(); ?>
 	</div>
     
 
-	<div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
+<div id="content" class="site-content" style="background-size:100%;background:url('http://7xjrp9.com1.z0.glb.clouddn.com/living-room2.jpg')no-repeat">
+
 
 <div class="container">
 <div class="content-left-wrap col-md-9">
@@ -50,10 +51,7 @@ get_header(); ?>
 
 				?>
 
-
-
 			<?php endwhile; // end of the loop. ?>
-
 
 
 		</main><!-- #main -->
@@ -61,10 +59,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 </div><!-- .content-left-wrap -->
-
-
-
-
 </div><!-- .container -->
 
 <?php get_footer(); ?>

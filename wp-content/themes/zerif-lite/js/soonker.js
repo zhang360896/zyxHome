@@ -139,13 +139,13 @@ jQuery(document).ready(function ($) {
 
         t0 = t1;
         if (!animateStop) {
-            if ("requestAnimationFrame" in window) {
+             if ("requestAnimationFrame" in window) {
                 requestAnimationFrame(livingRoom_snooker_animate);
             }
-            else if ("webkitRequestAnimationFrame" in window) {
-                webkitRequestAnimationFrame(livingRoom_snooker_animate);
+           else if ("webkitRequestAnimationFrame" in window){
+               webkitRequestAnimationFrame(livingRoom_snooker_animate);
             }
-            else if ("msRequestAnimationFrame" in window) {
+            else if ("msRequestAnimationFrame" in window)  {
                 msRequestAnimationFrame(livingRoom_snooker_animate);
             }
             else if ("mozRequestAnimationFrame" in window) {
@@ -164,7 +164,7 @@ jQuery(document).ready(function ($) {
                 if (b1 !== b2 && !b1.inhole && !b2.inhole) {
                     var rc = Math.sqrt(Math.pow(b1.x - b2.x, 2) + Math.pow(b1.y - b2.y, 2));
                     if (Math.ceil(rc) < (b1.radius + b2.radius)) {
-                        if (!b1.moving && !b2.moving) return;
+                        //if (!b1.moving && !b2.moving) return;
 
                         var ax = ((b1.vx - b2.vx) * Math.pow((b1.x - b2.x), 2) + (b1.vy - b2.vy) * (b1.x - b2.x) * (b1.y - b2.y)) / Math.pow(rc, 2)
                         var ay = ((b1.vy - b2.vy) * Math.pow((b1.y - b2.y), 2) + (b1.vx - b2.vx) * (b1.x - b2.x) * (b1.y - b2.y)) / Math.pow(rc, 2)
