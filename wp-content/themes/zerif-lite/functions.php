@@ -1673,6 +1673,9 @@ function remove_class_function( $classes ) {
         wp_enqueue_script('selfIntro_es');
         wp_enqueue_script('zoom_info');
     }
+	if(is_page("57")){
+		wp_enqueue_script('zoom_info');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
 
@@ -1696,6 +1699,11 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
         wp_enqueue_style('self_Style');
         wp_enqueue_style('zoom_style');
     }
+	if(is_page("57")){
+		wp_enqueue_style('hover_style');
+        wp_enqueue_style('self_Style');
+        wp_enqueue_style('zoom_style');
+	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_stylesheets' );
 
