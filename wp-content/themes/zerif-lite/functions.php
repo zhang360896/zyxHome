@@ -149,8 +149,23 @@ function zerif_setup()
 		add_theme_support( 'woocommerce' );
 
 }
-
-
+/*
+ add_filter('zerif_custom_background_args', 'mycustombackground');
+    //把函数mycustombackground挂接到过滤器钩子zerif_custom_background_args上
+    //定义过滤器函数mycustombackground
+    function mycustombackground(array $custombackground) {
+		$test=false;
+		if(!test){
+        $custombackground['default-color']='ffffff';
+		$custombackground['default-image']=get_stylesheet_directory_uri() . "/images/slider-img2.jpg";
+		}
+		else{
+		$custombackground['default-color']='ffffff';
+		$custombackground['default-image']=get_stylesheet_directory_uri() . "/images/bg.jpg";
+		}
+		return $custombackground;
+    }
+	*/
 add_action('after_setup_theme', 'zerif_setup');
 
 
@@ -1641,13 +1656,30 @@ function recaptcha_scripts() {
 
 }
 
-/* remove custom-background from body_class() */
+/* add livingroom-custom-background to body_class() */
+add_filter( 'body_class', 'my_class_names' );
+function my_class_names( $classes ) {
+	// add 'class-name' to the $classes array
+	$classes[] = 'livingroom-custom-background';
+	// return the $classes array
+	return $classes;
+}
+
+
+
+/* remove custom-background and livingroom-custom-background from body_class() */
 add_filter( 'body_class', 'remove_class_function' );
 function remove_class_function( $classes ) {
 
-    if ( !is_home() ) {   
+    if (!is_home()) {   
         // index of custom-background
         $key = array_search('custom-background', $classes);
+        // remove class
+        unset($classes[$key]);
+    }
+	if ( !is_page("57") ) {   
+        // index of livingroom-custom-background
+        $key = array_search('livingroom-custom-background', $classes);
         // remove class
         unset($classes[$key]);
     }
@@ -1692,6 +1724,8 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
     wp_register_style('hover_normalize', get_template_directory_uri().'/css/selfIntro/hover_normalize.css', array(),'', 'all');
     wp_register_style('zoom_style', get_template_directory_uri().'/css/selfIntro/zoom-style.css', array(),'', 'all');
     
+	wp_register_style('test', get_template_directory_uri().'/css/selfIntro/test.css', array(),'', 'all');
+	
     if (is_single("83")){
         wp_enqueue_style('bootstrap');
         //wp_enqueue_style('hover_demo');
@@ -1703,6 +1737,7 @@ add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_scripts' );
 		wp_enqueue_style('hover_style');
         wp_enqueue_style('self_Style');
         wp_enqueue_style('zoom_style');
+		wp_enqueue_style('test');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_adding_selfIntro_stylesheets' );

@@ -18,6 +18,7 @@ get_header(); ?>
 <div id="content" class="site-content" >
 <video width=100% height=100% autoplay>
  <source type="video/mp4" src="http://7xjrp9.com1.z0.glb.clouddn.com/livingroom_video.mp4" />
+ <img src="//c1.mifile.cn/f/i/15/scooter/overall-intro-video.jpg" alt="" />
 </video>
 
 <div class="work-section" id="work">
