@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
         animateStop = false;
         livingRoom_snooker_animate();
     }
-
+/*
     canvas.addEventListener("touchstart", function () {
         var stop = false;
         balls.foreach(function () {
@@ -73,7 +73,7 @@ jQuery(document).ready(function ($) {
             document.querySelector(".livingRoom_snooker_shotPower").style.display = "none";
         }
     }, false);
-
+*/
     canvas.addEventListener("mousedown", function () {
         var stop = false;
         balls.foreach(function () {
@@ -85,7 +85,7 @@ jQuery(document).ready(function ($) {
         document.querySelector(".livingRoom_snooker_shotPower").style.left = balls[0].x - 40 + "px";
         document.getElementById("livingRoom_snooker_pow").className = "livingRoom_snooker_animate";
         var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
-        var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
+        var y = event.clientY  - document.querySelector(".livingRoom_snooker_view").offsetTop;
         dotline.display = true;
         dotline.x0 = balls[0].x;
         dotline.y0 = balls[0].y;
@@ -97,13 +97,13 @@ jQuery(document).ready(function ($) {
 
         function mmHandle() {
             var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
-            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
+            var y = event.clientY  - document.querySelector(".livingRoom_snooker_view").offsetTop;
             dotline.x1 = x;
             dotline.y1 = y;
         }
         function muHandle() {
             var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - document.querySelector(".livingRoom_snooker_view").offsetLeft;
-            var y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop - document.querySelector(".livingRoom_snooker_view").offsetTop;
+            var y = event.clientY- document.querySelector(".livingRoom_snooker_view").offsetTop;
 
             var angle = Math.atan((y - balls[0].y) / (x - balls[0].x));
             var h = document.getElementById("livingRoom_snooker_pow").offsetHeight / document.getElementById("livingRoom_snooker_powbar").offsetHeight;
