@@ -13,7 +13,7 @@ get_header(); ?>
 </header> <!-- / END HOME SECTION  -->
 
 <div id="content" class="site-content" >
-<div class="video-text">
+<div class="video-text" style="position:relative;">
 <div class="livinroom-video">
 	<video width=100% height=100% autoplay>
 	 <source type="video/mp4" src="http://7xjrp9.com1.z0.glb.clouddn.com/livingroom_video.mp4" />
@@ -25,22 +25,15 @@ get_header(); ?>
 	<p class="text">“Welcome！这里是主人的会客室，保留着他的朋友和他们的足迹”</p>
 </div>
 
-<div class="portfolio" style="width:30% opacity: 1;float:right;">
-						<div class="portfolio-wrapper">		
-                            <div class = "galleryImage">
-                                
-                                 <a class="lightbox" href="#exMi">
-                                    <img src="http://127.0.0.1/homepage/wp-content/themes/zifer-child/images/pic6.jpg" class="img-responsive" alt="Mi" />
-                                    <div class="info">
-                                        <h4>桌球</h4>
-                                        <p></p>
-                                    </div> 
-                                </a> 
-                                 
-                            </div>
-                           
-                        </div>
-					</div>	
+<div class="portfolio-wrapper-livingroom">				
+		 <a class="lightbox" href="#exMi">
+			<img src="http://127.0.0.1/homepage/wp-content/themes/zifer-child/images/pic6.jpg" class="img-responsive" alt="Mi" />
+			<div class="info">
+				<h4>桌球</h4>
+			</div> 
+		</a>
+</div>
+				
 </div>
 
 <div class="work-section" id="work">

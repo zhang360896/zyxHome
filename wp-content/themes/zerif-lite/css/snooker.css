@@ -29,7 +29,15 @@
 		}
 		#livingRoom_snookerReset{position:absolute;right:50%;top:545px;color:#000;background-color:yellow;border:1px solid red;padding:3px 5px;}
 		#livingRoom_snookerReset:hover{color:red;background-color:green;}
-		.livingRoom_snooker_animate{-webkit-animation:add 2s infinite linear;}
+		.livingRoom_snooker_animate{
+			-webkit-animation:add 2s infinite linear;
+			animation:add 2s infinite linear;
+			}
+		@keyframes add{
+			0%{height:0%;background-color:#ff0;}
+			50%{height:100%;background-color:#f00;}
+			100%{height:0%;background-color:#ff0;}
+		}
 		@-webkit-keyframes add{
 			0%{height:0%;background-color:#ff0;}
 			50%{height:100%;background-color:#f00;}
